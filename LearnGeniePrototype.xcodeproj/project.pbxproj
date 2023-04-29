@@ -16,6 +16,12 @@
 		B10F254D29F712D200061817 /* LearnGeniePrototypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10F254C29F712D200061817 /* LearnGeniePrototypeTests.swift */; };
 		B10F255729F712D200061817 /* LearnGeniePrototypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10F255629F712D200061817 /* LearnGeniePrototypeUITests.swift */; };
 		B10F255929F712D200061817 /* LearnGeniePrototypeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10F255829F712D200061817 /* LearnGeniePrototypeUITestsLaunchTests.swift */; };
+		B10F256629F7167900061817 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10F256529F7167900061817 /* Course.swift */; };
+		B1513D6729F851B80063D6AF /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1513D6629F851B80063D6AF /* TopicViewController.swift */; };
+		B1513D6929F85EEA0063D6AF /* TopicBodyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1513D6829F85EE90063D6AF /* TopicBodyViewController.swift */; };
+		B151D89B29FBD7DF00A134F9 /* SubTopicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151D89A29FBD7DF00A134F9 /* SubTopicTableViewController.swift */; };
+		B1DB7CFF29FC2DA3004FFF01 /* AIEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DB7CFE29FC2DA3004FFF01 /* AIEngine.swift */; };
+		B1DF6D8229F97BD100108242 /* Prompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DF6D8129F97BD100108242 /* Prompts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		B10F255229F712D200061817 /* LearnGeniePrototypeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnGeniePrototypeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B10F255629F712D200061817 /* LearnGeniePrototypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnGeniePrototypeUITests.swift; sourceTree = "<group>"; };
 		B10F255829F712D200061817 /* LearnGeniePrototypeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnGeniePrototypeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B10F256529F7167900061817 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		B1513D6629F851B80063D6AF /* TopicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
+		B1513D6829F85EE90063D6AF /* TopicBodyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicBodyViewController.swift; sourceTree = "<group>"; };
+		B151D89A29FBD7DF00A134F9 /* SubTopicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTopicTableViewController.swift; sourceTree = "<group>"; };
+		B1DB7CFE29FC2DA3004FFF01 /* AIEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIEngine.swift; sourceTree = "<group>"; };
+		B1DF6D8129F97BD100108242 /* Prompts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +111,19 @@
 		B10F253429F712D000061817 /* LearnGeniePrototype */ = {
 			isa = PBXGroup;
 			children = (
+				B1513D6629F851B80063D6AF /* TopicViewController.swift */,
+				B151D89A29FBD7DF00A134F9 /* SubTopicTableViewController.swift */,
 				B10F253529F712D000061817 /* AppDelegate.swift */,
 				B10F253729F712D000061817 /* SceneDelegate.swift */,
 				B10F253929F712D000061817 /* ViewController.swift */,
+				B1513D6829F85EE90063D6AF /* TopicBodyViewController.swift */,
+				B10F256529F7167900061817 /* Course.swift */,
 				B10F253B29F712D000061817 /* Main.storyboard */,
 				B10F253E29F712D200061817 /* Assets.xcassets */,
 				B10F254029F712D200061817 /* LaunchScreen.storyboard */,
 				B10F254329F712D200061817 /* Info.plist */,
+				B1DF6D8129F97BD100108242 /* Prompts.swift */,
+				B1DB7CFE29FC2DA3004FFF01 /* AIEngine.swift */,
 			);
 			path = LearnGeniePrototype;
 			sourceTree = "<group>";
@@ -258,8 +276,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1DB7CFF29FC2DA3004FFF01 /* AIEngine.swift in Sources */,
+				B1513D6929F85EEA0063D6AF /* TopicBodyViewController.swift in Sources */,
+				B10F256629F7167900061817 /* Course.swift in Sources */,
 				B10F253A29F712D000061817 /* ViewController.swift in Sources */,
+				B1DF6D8229F97BD100108242 /* Prompts.swift in Sources */,
+				B151D89B29FBD7DF00A134F9 /* SubTopicTableViewController.swift in Sources */,
 				B10F253629F712D000061817 /* AppDelegate.swift in Sources */,
+				B1513D6729F851B80063D6AF /* TopicViewController.swift in Sources */,
 				B10F253829F712D000061817 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +461,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H9C72XA9S5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LearnGeniePrototype/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -464,6 +489,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H9C72XA9S5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LearnGeniePrototype/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
