@@ -4,7 +4,6 @@
 //
 //  Created by Артем Чмиленко on 15.05.2023.
 //
-//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
 import Foundation
 import Security
 
