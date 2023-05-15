@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B10C1B512A0027FC00309C3A /* CollectionCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10C1B4F2A0027FC00309C3A /* CollectionCellController.swift */; };
+		B10C1B542A00289800309C3A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10C1B532A00289800309C3A /* MainViewController.swift */; };
 		B10F253629F712D000061817 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10F253529F712D000061817 /* AppDelegate.swift */; };
 		B10F253829F712D000061817 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10F253729F712D000061817 /* SceneDelegate.swift */; };
 		B10F253A29F712D000061817 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10F253929F712D000061817 /* ViewController.swift */; };
@@ -17,9 +19,16 @@
 		B10F255729F712D200061817 /* LearnGeniePrototypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10F255629F712D200061817 /* LearnGeniePrototypeUITests.swift */; };
 		B10F255929F712D200061817 /* LearnGeniePrototypeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10F255829F712D200061817 /* LearnGeniePrototypeUITestsLaunchTests.swift */; };
 		B10F256629F7167900061817 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10F256529F7167900061817 /* Course.swift */; };
+		B1178F262A0116A60011324F /* AddCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1178F252A0116A60011324F /* AddCourseViewController.swift */; };
 		B1513D6729F851B80063D6AF /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1513D6629F851B80063D6AF /* TopicViewController.swift */; };
 		B1513D6929F85EEA0063D6AF /* TopicBodyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1513D6829F85EE90063D6AF /* TopicBodyViewController.swift */; };
 		B151D89B29FBD7DF00A134F9 /* SubTopicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151D89A29FBD7DF00A134F9 /* SubTopicTableViewController.swift */; };
+		B192A02D2A124D2800C66E04 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192A02C2A124D2800C66E04 /* KeychainManager.swift */; };
+		B192A02F2A12526A00C66E04 /* UITextFieldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192A02E2A12526A00C66E04 /* UITextFieldController.swift */; };
+		B192A0312A1256E700C66E04 /* EnterApiKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192A0302A1256E700C66E04 /* EnterApiKeyView.swift */; };
+		B1A8161B2A02F3C4007CDCE4 /* IconPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A8161A2A02F3C4007CDCE4 /* IconPicker.swift */; };
+		B1A8161D2A02F93A007CDCE4 /* IconPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A8161C2A02F93A007CDCE4 /* IconPickerCell.swift */; };
+		B1B1107729FFE5A500A6B862 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B1107629FFE5A500A6B862 /* TableViewCell.swift */; };
 		B1DB7CFF29FC2DA3004FFF01 /* AIEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DB7CFE29FC2DA3004FFF01 /* AIEngine.swift */; };
 		B1DF6D8229F97BD100108242 /* Prompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DF6D8129F97BD100108242 /* Prompts.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B10C1B4F2A0027FC00309C3A /* CollectionCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCellController.swift; sourceTree = "<group>"; };
+		B10C1B532A00289800309C3A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B10F253229F712D000061817 /* LearnGeniePrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnGeniePrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B10F253529F712D000061817 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B10F253729F712D000061817 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,9 +67,16 @@
 		B10F255629F712D200061817 /* LearnGeniePrototypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnGeniePrototypeUITests.swift; sourceTree = "<group>"; };
 		B10F255829F712D200061817 /* LearnGeniePrototypeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnGeniePrototypeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B10F256529F7167900061817 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		B1178F252A0116A60011324F /* AddCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCourseViewController.swift; sourceTree = "<group>"; };
 		B1513D6629F851B80063D6AF /* TopicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
 		B1513D6829F85EE90063D6AF /* TopicBodyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicBodyViewController.swift; sourceTree = "<group>"; };
 		B151D89A29FBD7DF00A134F9 /* SubTopicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTopicTableViewController.swift; sourceTree = "<group>"; };
+		B192A02C2A124D2800C66E04 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		B192A02E2A12526A00C66E04 /* UITextFieldController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldController.swift; sourceTree = "<group>"; };
+		B192A0302A1256E700C66E04 /* EnterApiKeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterApiKeyView.swift; sourceTree = "<group>"; };
+		B1A8161A2A02F3C4007CDCE4 /* IconPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconPicker.swift; sourceTree = "<group>"; };
+		B1A8161C2A02F93A007CDCE4 /* IconPickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconPickerCell.swift; sourceTree = "<group>"; };
+		B1B1107629FFE5A500A6B862 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		B1DB7CFE29FC2DA3004FFF01 /* AIEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIEngine.swift; sourceTree = "<group>"; };
 		B1DF6D8129F97BD100108242 /* Prompts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +109,7 @@
 		B10F252929F712D000061817 = {
 			isa = PBXGroup;
 			children = (
+				B192A0302A1256E700C66E04 /* EnterApiKeyView.swift */,
 				B10F253429F712D000061817 /* LearnGeniePrototype */,
 				B10F254B29F712D200061817 /* LearnGeniePrototypeTests */,
 				B10F255529F712D200061817 /* LearnGeniePrototypeUITests */,
@@ -111,19 +130,17 @@
 		B10F253429F712D000061817 /* LearnGeniePrototype */ = {
 			isa = PBXGroup;
 			children = (
-				B1513D6629F851B80063D6AF /* TopicViewController.swift */,
-				B151D89A29FBD7DF00A134F9 /* SubTopicTableViewController.swift */,
+				B1A816212A02FB45007CDCE4 /* AIManager */,
+				B1A816202A02FB2B007CDCE4 /* CourseManager */,
+				B1A8161F2A02FAE2007CDCE4 /* CourseMaterial */,
+				B1A8161E2A02FA50007CDCE4 /* CourseCeation */,
 				B10F253529F712D000061817 /* AppDelegate.swift */,
 				B10F253729F712D000061817 /* SceneDelegate.swift */,
-				B10F253929F712D000061817 /* ViewController.swift */,
-				B1513D6829F85EE90063D6AF /* TopicBodyViewController.swift */,
-				B10F256529F7167900061817 /* Course.swift */,
 				B10F253B29F712D000061817 /* Main.storyboard */,
 				B10F253E29F712D200061817 /* Assets.xcassets */,
 				B10F254029F712D200061817 /* LaunchScreen.storyboard */,
 				B10F254329F712D200061817 /* Info.plist */,
-				B1DF6D8129F97BD100108242 /* Prompts.swift */,
-				B1DB7CFE29FC2DA3004FFF01 /* AIEngine.swift */,
+				B192A02C2A124D2800C66E04 /* KeychainManager.swift */,
 			);
 			path = LearnGeniePrototype;
 			sourceTree = "<group>";
@@ -143,6 +160,48 @@
 				B10F255829F712D200061817 /* LearnGeniePrototypeUITestsLaunchTests.swift */,
 			);
 			path = LearnGeniePrototypeUITests;
+			sourceTree = "<group>";
+		};
+		B1A8161E2A02FA50007CDCE4 /* CourseCeation */ = {
+			isa = PBXGroup;
+			children = (
+				B1A8161C2A02F93A007CDCE4 /* IconPickerCell.swift */,
+				B1A8161A2A02F3C4007CDCE4 /* IconPicker.swift */,
+				B1178F252A0116A60011324F /* AddCourseViewController.swift */,
+				B192A02E2A12526A00C66E04 /* UITextFieldController.swift */,
+			);
+			path = CourseCeation;
+			sourceTree = "<group>";
+		};
+		B1A8161F2A02FAE2007CDCE4 /* CourseMaterial */ = {
+			isa = PBXGroup;
+			children = (
+				B1B1107629FFE5A500A6B862 /* TableViewCell.swift */,
+				B1513D6629F851B80063D6AF /* TopicViewController.swift */,
+				B151D89A29FBD7DF00A134F9 /* SubTopicTableViewController.swift */,
+				B1513D6829F85EE90063D6AF /* TopicBodyViewController.swift */,
+			);
+			path = CourseMaterial;
+			sourceTree = "<group>";
+		};
+		B1A816202A02FB2B007CDCE4 /* CourseManager */ = {
+			isa = PBXGroup;
+			children = (
+				B10C1B4F2A0027FC00309C3A /* CollectionCellController.swift */,
+				B10F253929F712D000061817 /* ViewController.swift */,
+				B10C1B532A00289800309C3A /* MainViewController.swift */,
+				B10F256529F7167900061817 /* Course.swift */,
+			);
+			path = CourseManager;
+			sourceTree = "<group>";
+		};
+		B1A816212A02FB45007CDCE4 /* AIManager */ = {
+			isa = PBXGroup;
+			children = (
+				B1DF6D8129F97BD100108242 /* Prompts.swift */,
+				B1DB7CFE29FC2DA3004FFF01 /* AIEngine.swift */,
+			);
+			path = AIManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,14 +335,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1A8161B2A02F3C4007CDCE4 /* IconPicker.swift in Sources */,
 				B1DB7CFF29FC2DA3004FFF01 /* AIEngine.swift in Sources */,
 				B1513D6929F85EEA0063D6AF /* TopicBodyViewController.swift in Sources */,
 				B10F256629F7167900061817 /* Course.swift in Sources */,
+				B192A02F2A12526A00C66E04 /* UITextFieldController.swift in Sources */,
+				B10C1B542A00289800309C3A /* MainViewController.swift in Sources */,
 				B10F253A29F712D000061817 /* ViewController.swift in Sources */,
 				B1DF6D8229F97BD100108242 /* Prompts.swift in Sources */,
+				B192A02D2A124D2800C66E04 /* KeychainManager.swift in Sources */,
+				B1B1107729FFE5A500A6B862 /* TableViewCell.swift in Sources */,
 				B151D89B29FBD7DF00A134F9 /* SubTopicTableViewController.swift in Sources */,
+				B10C1B512A0027FC00309C3A /* CollectionCellController.swift in Sources */,
+				B1178F262A0116A60011324F /* AddCourseViewController.swift in Sources */,
 				B10F253629F712D000061817 /* AppDelegate.swift in Sources */,
 				B1513D6729F851B80063D6AF /* TopicViewController.swift in Sources */,
+				B1A8161D2A02F93A007CDCE4 /* IconPickerCell.swift in Sources */,
+				B192A0312A1256E700C66E04 /* EnterApiKeyView.swift in Sources */,
 				B10F253829F712D000061817 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

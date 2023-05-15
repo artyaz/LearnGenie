@@ -7,19 +7,9 @@
 
 import UIKit
 
-class TopicViewController: UITableViewController, EngineDelegate {
+class TopicViewController: UITableViewController{
     
     let engine = Engine()
-    
-    func didAddCourse() {
-        DispatchQueue.main.async {
-            // Reload the table view data to reflect the changes made to the courses array
-            self.tableView.reloadData()
-            // Stop the cell animation (if any)
-            self.stopCellAnimation()
-        }
-    }
-
     
     var loadingCell: UITableViewCell?
     
@@ -29,9 +19,6 @@ class TopicViewController: UITableViewController, EngineDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        engine.delegate = self
 
         navigationController?.navigationBar.prefersLargeTitles = true
 
@@ -68,9 +55,10 @@ class TopicViewController: UITableViewController, EngineDelegate {
             loadingIndicator.hidesWhenStopped = true
             loadingIndicator.startAnimating()
             cell?.accessoryView = loadingIndicator
+            loadingIndicator.startAnimating()
         }
 
-        if isRequestInProgress {
+        if isRequestInProgress && selectedCourse.subTopics.isEmpty {
             showAlert(alertTitle: "Course is still generating", alertText: "Please, wait until finish")
             return
         }
@@ -90,8 +78,12 @@ class TopicViewController: UITableViewController, EngineDelegate {
             Engine().getRequestResult(prompt: Prompts().subTopicPrompt
                 .replacingOccurrences(of: "{courseName}", with: courses[courseIndex].name)
                 .replacingOccurrences(of: "{topicName}", with: courses[courseIndex].topics[indexPath.row].topicName)
-                .replacingOccurrences(of: "{includedTopics}", with: includedTopics))
-            
+                .replacingOccurrences(of: "{includedTopics}", with: includedTopics)) {
+                    DispatchQueue.main.async {
+                        self.stopCellAnimation()
+                    }
+                }
+            tableView.deselectRow(at: indexPath, animated: true)
             return
         }
 

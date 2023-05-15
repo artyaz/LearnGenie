@@ -12,29 +12,44 @@ var requestedTopicIndex = 0
 var requestedCourseIndex = 0
 var isRequestInProgress = false
 var courseName = ""
+var courseIcon = ""
 var asignTo = ""
 var responseMessage = ""
 
-protocol EngineDelegate: AnyObject {
-    func didAddCourse()
-}
-
 class Engine {
-    weak var delegate: EngineDelegate?
-    func getRequestResult(prompt: String) {
-        
-        
+    
+    func loadApiKey() -> String {
+        let apiKeyKeychain = KeychainManager(service: Bundle.main.bundleIdentifier! + ".apiKey.")
+        var userApiKey: String?
+        do {
+            let apiKeyData = try apiKeyKeychain.load(forKey: "apiKey")
+            guard let apiKey = String(data: apiKeyData, encoding: .utf8) else {fatalError("No api key provided")}
+            userApiKey = apiKey
+        } catch let error as KeychainError {
+            if case KeychainError.unhandledError(let status) = error, status == errSecItemNotFound {
+                print("API key not found in keychain")
+            } else {
+                print("Error loading API key: \(error)")
+            }
+        } catch {
+            print("Unexpected error: \(error)")
+        }
+        return userApiKey ?? "No api key provided"
+    }
+
+    
+    func getRequestResult(prompt: String, completion: @escaping () -> Void) {
         
         isRequestInProgress = true
         
-        let apiKey = "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"
+        var apiKey = loadApiKey()
         let endpoint = "https://api.openai.com/v1/chat/completions"
         
         let postData = try! JSONSerialization.data(withJSONObject: [
             "model": "gpt-3.5-turbo",
             "messages": [["role": "user", "content": "\(prompt)"]],
             "temperature": 0.7
-        ], options: [])
+        ] as [String : Any], options: [])
         
         var request = URLRequest(url: URL(string: endpoint)!)
         request.httpMethod = "POST"
@@ -47,9 +62,9 @@ class Engine {
                 let json = try! JSONSerialization.jsonObject(with: data, options: [])
                 isRequestInProgress = false
                 self.getContent(json: json)
+                completion() // call completion handler when request is complete
             }
         }
-        
         task.resume()
     }
     
@@ -67,7 +82,7 @@ class Engine {
     func asignValue() {
         switch asignTo {
         case "course":
-            addCourse(name: courseName, content: responseMessage)
+            appendModules(name: courseName, content: responseMessage)
             
             saveCoursesToUserDefaults()
         case "topic":
@@ -75,21 +90,18 @@ class Engine {
             saveCoursesToUserDefaults()
         case "subTopicBody":
             courses[requestedCourseIndex].topics[requestedTopicIndex].subTopics[requestedSubTopicIndex].subTopicBody = responseMessage
-            delegate?.didAddCourse()
             saveCoursesToUserDefaults()
         default:
             fatalError("")
         }
     }
         
-        func addCourse(name: String, content: String) {
+        func appendModules(name: String, content: String) {
             let separatedContent = content.components(separatedBy: "\n")
             
-            courses.append(Course(name: name, description: "" ,topics: []))
             for topic in separatedContent {
-                courses[courses.endIndex - 1].topics.append(Course.Topic(subTopics: [], topicName: topic))
+                courses[0].topics.append(Course.Topic(subTopics: [], topicName: topic))
             }
-            delegate?.didAddCourse()
         }
         
         func addTopic(content: String) {
@@ -100,7 +112,6 @@ class Engine {
             }
             let topics = courses[requestedCourseIndex].topics[requestedTopicIndex].subTopics.count
             print(topics)
-            delegate?.didAddCourse()
         }
         
 }

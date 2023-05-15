@@ -52,9 +52,10 @@ class SubTopicTableViewController: UITableViewController {
             loadingIndicator.hidesWhenStopped = true
             loadingIndicator.startAnimating()
             cell?.accessoryView = loadingIndicator
+            loadingIndicator.startAnimating()
         }
         
-        if isRequestInProgress {
+        if isRequestInProgress && selectedCourse.subTopicBody.isEmpty {
             showAlert(alertTitle: "Course being generated", alertText: "Wait until finish")
             return
         }
@@ -66,13 +67,9 @@ class SubTopicTableViewController: UITableViewController {
             requestedTopicIndex = topicIndex
             requestedSubTopicIndex = indexPath.row
             
-            var includedMaterial = ""
-            
-            for topic in courses[courseIndex].topics{
-                includedMaterial += "\(topic.topicName)\n"
-            }
-            for subTopic in courses[courseIndex].topics[topicIndex].subTopics{
-                includedMaterial += "\(subTopic.subTopicName)\n"
+            var nextTopic: String?
+            if courses[courseIndex].topics.count > topicIndex + 1{
+                nextTopic = courses[courseIndex].topics[topicIndex + 1].topicName
             }
             
             let topicName = courses[courseIndex].topics[topicIndex].topicName
@@ -82,8 +79,12 @@ class SubTopicTableViewController: UITableViewController {
                 .replacingOccurrences(of: "{courseName}", with: courses[courseIndex].name)
                 .replacingOccurrences(of: "{topicName}", with: topicName)
                 .replacingOccurrences(of: "{subTopicName}", with: subTopicName)
-                .replacingOccurrences(of: "{includedMaterial}", with: includedMaterial))
-            checkContains(index: indexPath.row)
+                .replacingOccurrences(of: "{nextTopic}", with: nextTopic ?? "Conclusion")){
+                    DispatchQueue.main.async {
+                        self.stopCellAnimation()
+                    }
+                }
+            tableView.deselectRow(at: indexPath, animated: true)
             return
             
         }
@@ -99,24 +100,6 @@ class SubTopicTableViewController: UITableViewController {
             loadingIndicator.stopAnimating()
             loadingCell?.accessoryView = nil
         }
-    }
-    
-    func checkContains(index: Int) {
-        DispatchQueue.main.async {
-            if let loadingIndicator = self.loadingCell?.accessoryView as? UIActivityIndicatorView {
-                loadingIndicator.startAnimating()
-            }
-        }
-        let selectedSubTopic = index
-        DispatchQueue.global(qos: .background).async {
-            while courses[self.courseIndex].topics[self.topicIndex].subTopics[selectedSubTopic].subTopicBody.isEmpty {
-                continue
-            }
-            DispatchQueue.main.async {
-                self.stopCellAnimation()
-            }
-        }
-       
     }
     
     func showAlert(alertTitle: String, alertText: String){

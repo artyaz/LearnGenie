@@ -7,64 +7,271 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1CACA7C2-7F7F-4DB8-928D-E03565A495B7"
+            uuid = "3C71353C-6D8D-4B4F-B8FA-E3B19225260D"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LearnGeniePrototype/AIEngine.swift"
+            filePath = "LearnGeniePrototype/CourseManager/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
-            landmarkName = "addCourse(name:content:)"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "requestCourse(name:description:iconName:expirience:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9547DAA0-9E76-46B6-82A4-7F957AD4D408"
-            shouldBeEnabled = "Yes"
+            uuid = "CEAFF9D7-EEB7-45D3-8CCC-5C06B21B56F5"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LearnGeniePrototype/AIEngine.swift"
+            filePath = "LearnGeniePrototype/CourseMaterial/SubTopicTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
-            landmarkName = "addTopic(content:)"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9702BFBE-FBD5-4B51-8BAD-66107B3454EE"
-            shouldBeEnabled = "Yes"
+            uuid = "030A9850-7AE1-40A9-B0E8-8778D51E3E3A"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LearnGeniePrototype/TopicViewController.swift"
+            filePath = "LearnGeniePrototype/CourseMaterial/SubTopicTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "TopicViewController"
-            landmarkType = "3">
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0E31218D-AF85-47F5-96F4-837557864EEE"
+            uuid = "886A86CB-1176-4EE4-869E-2B3371505E62"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LearnGeniePrototype/CourseMaterial/SubTopicTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EA870A2B-6134-4223-8973-5F6AC58C4B0D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LearnGeniePrototype/CourseManager/Course.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "completedLessonsCount(courseIndex:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2D944D53-A2EE-44A9-B8AA-97EC7B996703"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LearnGeniePrototype/CourseManager/Course.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "completedLessonsCount(courseIndex:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A2F7366C-3545-4C04-A801-AD4D8167058A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LearnGeniePrototype/CourseManager/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "askUserForAPIKey()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A2F7366C-3545-4C04-A801-AD4D8167058A - eb7ef0a80304bf30"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LearnGeniePrototype.MainViewController.askUserForAPIKey() -&gt; ()"
+                  moduleName = "LearnGeniePrototype"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemcmilenko/Documents/Workspace/Code/Swift/100DC/LearnGeniePrototype/LearnGeniePrototype/CourseManager/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "A2F7366C-3545-4C04-A801-AD4D8167058A - eb7ef0a80304bf30"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LearnGeniePrototype.MainViewController.askUserForAPIKey() -&gt; ()"
+                  moduleName = "LearnGeniePrototype"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemcmilenko/Documents/Workspace/Code/Swift/100DC/LearnGeniePrototype/LearnGeniePrototype/CourseManager/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "07C3E491-3973-45FB-AE82-D80E88EA4427"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LearnGeniePrototype/CourseManager/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "07C3E491-3973-45FB-AE82-D80E88EA4427 - a65446a7bfd1df17"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LearnGeniePrototype.MainViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "LearnGeniePrototype"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemcmilenko/Documents/Workspace/Code/Swift/100DC/LearnGeniePrototype/LearnGeniePrototype/CourseManager/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "2336">
+               </Location>
+               <Location
+                  uuid = "07C3E491-3973-45FB-AE82-D80E88EA4427 - a65446a7bfd1df36"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LearnGeniePrototype.MainViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "LearnGeniePrototype"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemcmilenko/Documents/Workspace/Code/Swift/100DC/LearnGeniePrototype/LearnGeniePrototype/CourseManager/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "2756">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DB196C8B-5A31-440A-B66A-1DEFE91DCBBD"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LearnGeniePrototype/TopicViewController.swift"
+            filePath = "EnterApiKeyView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "didAddCourse()"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "saveApiKey(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DB196C8B-5A31-440A-B66A-1DEFE91DCBBD - bcb6e57c7ca29998"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LearnGeniePrototype.EnterApiKeyView.saveApiKey(Any) -&gt; ()"
+                  moduleName = "LearnGeniePrototype"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemcmilenko/Documents/Workspace/Code/Swift/100DC/LearnGeniePrototype/EnterApiKeyView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "1220">
+               </Location>
+               <Location
+                  uuid = "DB196C8B-5A31-440A-B66A-1DEFE91DCBBD - bcb6e57c7ca29998"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LearnGeniePrototype.EnterApiKeyView.saveApiKey(Any) -&gt; ()"
+                  moduleName = "LearnGeniePrototype"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemcmilenko/Documents/Workspace/Code/Swift/100DC/LearnGeniePrototype/EnterApiKeyView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "1808">
+               </Location>
+               <Location
+                  uuid = "DB196C8B-5A31-440A-B66A-1DEFE91DCBBD - bcb6e57c7ca29998"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LearnGeniePrototype.EnterApiKeyView.saveApiKey(Any) -&gt; ()"
+                  moduleName = "LearnGeniePrototype"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemcmilenko/Documents/Workspace/Code/Swift/100DC/LearnGeniePrototype/EnterApiKeyView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "1820">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "12A82D8C-940B-490E-880B-C81BCB1AE9E4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LearnGeniePrototype/CourseManager/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
